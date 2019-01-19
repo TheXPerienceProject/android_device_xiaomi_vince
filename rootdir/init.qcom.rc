@@ -531,7 +531,7 @@ service vendor.sensors /vendor/bin/sscrpcd
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.sensors.qti /vendor/bin/sensors.qti
+service vendor.sensors.qti /vendor/bin/sensors.qcom
     class core
     user system
     group system

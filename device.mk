@@ -169,12 +169,12 @@ PRODUCT_PACKAGES += \
     libebtc
 
 # XiaomiParts mode
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # FM
 PRODUCT_PACKAGES += \
