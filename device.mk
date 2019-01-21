@@ -20,6 +20,9 @@ $(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Enforce RRO
+PRODUCT_ENFORCE_RRO_TARGETS := framework-res SystemUI SettingsProvider Settings Bluetooth
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
