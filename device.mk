@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
-$(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
+$(call inherit-product, vendor/xiaomi2/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi2/vince/vince-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
