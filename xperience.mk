@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 
+#CAF prop CAF includes
+include device/qcom/common/common.mk
+
 # Boot Animation
 TARGET_BOOTANIMATION_HALF_RES := true
 
