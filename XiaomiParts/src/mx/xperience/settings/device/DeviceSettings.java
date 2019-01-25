@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.screwd.settings.device;
+package mx.xperience.settings.device;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
