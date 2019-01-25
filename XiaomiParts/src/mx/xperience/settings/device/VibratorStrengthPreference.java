@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.screwd.settings.device;
+package mx.xperience.settings.device;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -34,7 +34,7 @@ import android.os.Vibrator;
 
 import java.util.List;
 
-import com.screwd.settings.device.R;
+import mx.xperience.settings.device.R;
 
 public class VibratorStrengthPreference extends SeekBarDialogPreference implements
         SeekBar.OnSeekBarChangeListener {
