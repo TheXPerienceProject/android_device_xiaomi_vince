@@ -279,6 +279,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Xiaomi Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
