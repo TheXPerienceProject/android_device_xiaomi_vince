@@ -27,9 +27,6 @@ $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 #CAF prop CAF includes
 include device/qcom/common/common.mk
 
-# Boot Animation
-TARGET_BOOTANIMATION_HALF_RES := true
-
 # Device identifier
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := xperience_vince
