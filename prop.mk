@@ -107,6 +107,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1
 
+# Property to enable display default color mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.hwc_set_default_colormode=true
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
