@@ -1,0 +1,2 @@
+#allow ipacm functionality during wifi tethering
+allow ipacm system_server:netlink_socket { read write getattr setopt };
