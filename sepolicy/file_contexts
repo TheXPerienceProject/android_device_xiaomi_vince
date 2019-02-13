@@ -50,3 +50,6 @@
 /vendor/usr/keylayout/uinput-fpc\.kl                      u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/uinput-goodix\.kl                   u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/msm8953-snd-card-mtp_Button_Jack\.kl     u:object_r:vendor_keylayout_file:s0
+
+#net
+/sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
