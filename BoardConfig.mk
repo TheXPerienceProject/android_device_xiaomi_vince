@@ -218,6 +218,10 @@ TARGET_RIL_VARIANT := caf
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
