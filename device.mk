@@ -306,7 +306,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    init.xperience.postboot.sh \
+    init.special_power.sh \
+    init.performance_profiles.rc \
+    ueventd.qcom.rc \
+    xperience-info
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
