@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 
 # Inherit some camera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+#$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 #CAF prop CAF includes
 include device/qcom/common/common.mk
