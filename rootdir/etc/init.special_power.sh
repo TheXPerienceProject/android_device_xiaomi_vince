@@ -28,11 +28,17 @@ sleep 10;
 write /proc/sys/vm/swappiness 100
 #write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,36864,46080"
 
-write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor lisi
-write /sys/devices/system/cpu/cpufreq/lisi/go_hispeed_load 85
-write /sys/devices/system/cpu/cpufreq/lisi/use_sched_load 1
+#write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor lisi
+#write /sys/devices/system/cpu/cpufreq/lisi/go_hispeed_load 85
+#write /sys/devices/system/cpu/cpufreq/lisi/use_sched_load 1
 write /sys/devices/system/cpu/cpufreq/conservative/up_threshold 85
 write /sys/devices/system/cpu/cpufreq/conservative/down_threshold 30
+
+#Configure schedalessa
+write /sys/devices/system/cpu/cpufreq/schedalessa/up_rate_limit_us 0
+write /sys/devices/system/cpu/cpufreq/schedalessa/down_rate_limit_us 0
+write /sys/devices/system/cpu/cpufreq/schedalessa/hispeed_freq 1401600
+write /sys/devices/system/cpu/cpufreq/schedalessa/hispeed_load 85
 
 write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
 write /sys/module/cpu_boost/parameters/input_boost_ms 750
