@@ -177,7 +177,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
+    FM2 \
     libfmjni
 
 # Gatekeeper HAL
