@@ -234,3 +234,12 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk
+
+
+#################################################################################
+# This is the End of BoardConfig.mk file.
+# Now, Pickup other split Board.mk files:
+#################################################################################
+-include vendor/qcom/defs/board-defs/system/*.mk
+-include vendor/qcom/defs/board-defs/vendor/*.mk
+#################################################################################

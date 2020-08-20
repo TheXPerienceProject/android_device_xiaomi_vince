@@ -207,7 +207,9 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
+    android.hidl.manager@1.0.vendor \
     android.hidl.manager@1.0-java
 
 # HW crypto
@@ -252,10 +254,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.msm8953 \
     android.hardware.light@2.0-service.xiaomi_vince
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -417,3 +415,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+###################################################################################
+# This is the End of target.mk file.
+# Now, Pickup other split product.mk files:
+###################################################################################
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
+###################################################################################
+# Pickup blobs to satisfy LMKD
+#$(call inherit-product, vendor/qcom/common/performance/perf-common.mk)
+###################################################################################
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf

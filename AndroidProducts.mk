@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_vince.mk
+    $(LOCAL_DIR)/xperience_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_vince-user \
-    nad_vince-userdebug \
-    nad_vince-eng
+    xperience_vince-user \
+    xperience_vince-userdebug \
+    xperience_vince-eng

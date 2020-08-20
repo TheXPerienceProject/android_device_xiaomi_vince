@@ -22,13 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common Komodo stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 
-NAD_BUILD_TYPE := OFFICIAL
+#CAF prop CAF includes
+include device/qcom/common/common.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := nad_vince
+PRODUCT_NAME := xperience_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
