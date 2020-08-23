@@ -28,3 +28,8 @@ allow hal_fingerprint_default storage_file:lnk_file read;
 allow hal_fingerprint_default gx_fpd_data_file:dir create_dir_perms;
 allow hal_fingerprint_default system_data_file:dir create_dir_perms;
 allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
+
+# IDK why but meh?
+allow hal_fingerprint_default sysfs_leds:dir search;
+allow hal_fingerprint_default sysfs_kcal:dir search;
+allow hal_fingerprint_default sysfs_battery_supply:dir search;

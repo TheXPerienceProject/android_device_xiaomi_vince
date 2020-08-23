@@ -1,0 +1,2 @@
+# omx
+allow mediacodec vendor_sys_video_prop:file read;

@@ -25,6 +25,7 @@
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_vince                           u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service  u:object_r:hal_power_default_exec:s0
 
 # Ir
 /dev/lirc[0-9]*					u:object_r:lirc_device:s0
@@ -40,6 +41,9 @@
 
 # Sensors
 /(mnt/vendor)/persist/sensors(/.*)?                                     u:object_r:persist_sensors_file:s0
+
+# Service HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service          u:object_r:hal_authsecret_default_exec:s0
 
 # Sys files
 /sys/devices(/platform)?/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?		u:object_r:sysfs_leds:s0
