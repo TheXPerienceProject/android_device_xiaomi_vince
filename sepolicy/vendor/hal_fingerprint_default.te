@@ -33,3 +33,6 @@ allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
 allow hal_fingerprint_default sysfs_leds:dir search;
 allow hal_fingerprint_default sysfs_kcal:dir search;
 allow hal_fingerprint_default sysfs_battery_supply:dir search;
+
+#HW
+allow hal_fingerprint_default default_android_hwservice:hwservice_manager find;
